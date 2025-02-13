@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+
+    <!--Stylesheet link-->
+    <link rel="stylesheet" href="IceCreamStyles/IceCreamStyles.css">
+
+    <!--Favicon-->
+<link rel="icon" type="image/jpg" href="IceCreamImgs/IceCreamIcon.jpg">
+
+<!-- Authors: Xalli Bell and Emily Menken-->
+
+</head>
+
+<body>
+
+    <!--div for page-->
+    <div id="main">
+
+<header>
+
+    <img src="IceCreamImgs/IceCreamMainPage.jpg" alt="3 Ice Cream Cones">
+
+    <h1>Ice Cream Order Form </h1>
+
+
+    <hr>
+
+</header>
+
+<form action="thankyou.html" method="get">
+
+    <!-- Personal info-->
+    <fieldset id="personalInfo">
+
+    <legend id="perInfo">Personal Information</legend>
+
+    <label>Name:
+        <input id="pInfo" type="text" name="name">
+    </label>
+
+    <label>Email: 
+        <input id="pInfo" type="text" name="eAddress">
+    </label>
+
+    </fieldset>
+
+    <fieldset id="orderDetails">
+        <legend> Order Details </legend>
+
+     <p> Choose a flavor:</p>
+            <select name="Flavor" id="Flavor">
+            <option value="none"> Flavors...</option>
+            <option value="Vanilla">Vanilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Strawberry">Strawberry</option>
+            
+        </select>
+
+     <p>Choose a cone: </p>
+        <label>
+            <input type="radio" name="method" value="Cup"> Cup
+        </label>
+        <label>
+            <input type="radio" name="method" value="SugarCone"> Sugar Cone
+        </label>
+        <label>
+            <input type="radio" name="method" value="WaffleCone"> Waffle Cone
+        </label>
+
+        <p>Choose some toppings:</p>
+        <label>
+            <input type="checkbox" name="toppings" value="Sprinkles">Sprinkles
+        </label>
+    
+        <label>
+            <input type="checkbox" name="toppings" value="Nuts">Nuts
+        </label>
+    
+        <label>
+            <input type="checkbox" name="toppings" value="Cherries">Cherries
+        </label>
+    
+        <label>
+            <input type="checkbox" name="toppings" value="Whipped cream">Whipped Cream
+        </label>
+
+        <p>Additional Comments</p>
+        <textarea></textarea>
+
+    </fieldset>
+
+    <!--Submit button-->
+    <button type="submit">Place Order!</button>
+ 
+
+
+</form>
+
+
+</div>
+<!--end div-->
+
+</body>
+</html>
