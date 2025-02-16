@@ -96,9 +96,24 @@ fieldset#orderDetails>label>input{
     
     h2, h3{
         color: white;
+        background-color:tan;
     }
 
     #orderSummary{
 
-        color: white;
+        background-color: white;
+        color: brown;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #orderSummaryTitle{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
