@@ -94,3 +94,11 @@ fieldset#orderDetails>label>input{
         justify-content: space-around;
     }
     
+    h2, h3{
+        color: white;
+    }
+
+    #orderSummary{
+
+        color: white;
+    }

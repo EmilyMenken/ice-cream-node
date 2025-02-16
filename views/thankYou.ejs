@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You!</title>
+
+    <link rel="stylesheet" href="IceCreamStyles/IceCreamStyles.css">
+
+    <link rel="icon" type="image/jpg" href="IceCreamImgs/IceCreamIcon.jpg">
+
 </head>
 <body>
     
+    <h2>Thank you for your order, <%= order.name %>!</h2>
 
+    <h3>Order Details </h3>
+<div id = "orderSummary">
 
+    <p>Name: <%= order.name %></p>
+    <p>Email: <%= order.eAddress %></p>
+    <p>Flavor: <%= order.flavor %></p>
+    <p>Cone: <%= order.cone %></p>
+    <p>Toppings: <%= order.toppings %></p>
+    <p>Comments: <%= order.comments %></p>
+    
+</div>
+    
 </body>
 </html>
