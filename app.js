@@ -16,11 +16,19 @@ app.get('/', (req, res) => {
 
 const orders = [];
 
-app.post('thankYou', (req, res) => {
+app.post('/thankyou', (req, res) => {
 
-const order =
-{}
+const order = {
+    name: req.body.name,
+    email: req.body.eAddress,
+    flavor: req.body.Flavor,
+    cone: req.body.method,
+    toppings: req.body.toppings,
+    comments: req.body.comments
+}
+    console.log(order);
 
+    res.render('thankYou', { order })
 });
 
 
