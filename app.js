@@ -14,6 +14,16 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+const orders = [];
+
+app.post('thankYou', (req, res) => {
+
+const order =
+{}
+
+});
+
+
 app.listen(PORT, () => {
     console.log(`Server running http://localhost:${PORT}`);
 });
